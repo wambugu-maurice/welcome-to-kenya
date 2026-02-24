@@ -26,11 +26,13 @@ html,body {
 
 .navbar ul li {
     margin-top: 30px;
+  transition: transform 0.3s ease;
 }
 
 .navbar ul li:hover {
     background-color: #F9BE57;
-    padding: 3px;
+    transform: scale(1.09);
+    padding: 4px;
     border-radius: 5px;
 }
 
@@ -94,11 +96,13 @@ h2.animate__fadeIn {
     padding: 10px 30px;
     font-size: 20px;
     border-radius: 4px;
+    
+
 }
 
 .btn2:hover {
     background-color: #FBD38E;
-    transform: scale(1.1);
+   
 }
 
 .food-img img{
@@ -221,8 +225,13 @@ h2.animate__fadeIn {
     padding-top: 10%;
     line-height: 2;
     color: white;
-    flex-direction: column;
+    flex-direction: column; 
+  font-family: "Playwrite NZ Basic", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 .btn3 {
     padding: 10px 10px;
@@ -243,7 +252,10 @@ h2.animate__fadeIn {
 .explore{
     display: flex;
     flex-wrap: wrap;
-    
+     font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 
     
 }
@@ -256,6 +268,8 @@ h2.animate__fadeIn {
     box-shadow: 0px 0px 5px black;
     margin: 20px;
     background-color: #FDF0D9;
+  
+
 
 }
 
