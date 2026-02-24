@@ -1,14 +1,13 @@
-* {
-    font-family: "Purple Purse", serif;
-    font-weight: 400;
-    font-style: normal;
-}
 
-body {
+html,body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+    font-family: "Purple Purse", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .hero-page {
@@ -102,6 +101,13 @@ h2.animate__fadeIn {
     transform: scale(1.1);
 }
 
+.food-img img{
+    width: 80%;
+    
+}
+
+
+
 .food-cards {
     display: flex;
 }
@@ -120,17 +126,17 @@ h2.animate__fadeIn {
 
 .card1 {
     bottom: 1px;
-    left: 10%;
+    left: 3%;
 }
 
 .card2 {
     bottom: 1px;
-    left: 40%;
+    left: 35%;
 }
 
 .card3 {
-    bottom: 0.1px;
-    right: 5%;
+    bottom: 1px;
+    right: 10%;
 }
 
 .card {
@@ -153,11 +159,11 @@ h2.animate__fadeIn {
     width: 100%;
     display: flex;
     flex-direction: column;
+     background-color: #FEF7EC;
 }
 
 .page2-header {
-    margin: 70px auto 0;
-    height: 10vh;
+    margin: 70px auto ;
 }
 
 .page2-header hr {
@@ -168,39 +174,26 @@ h2.animate__fadeIn {
     margin: 20px auto;
 }
 
-.menu {
-    height: 90vh;
+
+.menu{
+  
     display: flex;
     justify-content: center;
-    gap: 30px;
+    align-content: center;
     flex-wrap: wrap;
-    margin-top: 80px;
-    margin-left: 70px;
+    gap: 30px;
+    margin-top: 5px;
+   
+    
 }
 
-.image img {
+.image img{
+    
     max-width: 300px;
-    display: flex;
-    padding: 3px 3px 60px 3px;
+    max-height: 70%;
     border-radius: 10px;
 }
 
-.image1 img,
-.image3 img,
-.image4 img {
-    max-height: 200px;
-}
-
-.menu p {
-    margin-left: 10%;
-    font-size: 20px;
-}
-
-.image p {
-    background-color: #FFC653;
-    text-align: center;
-    padding: 2px 5px;
-}
 
 .page3 {
     height: 100vh;
@@ -215,7 +208,7 @@ h2.animate__fadeIn {
 }
 
 .video video {
-    max-width: 600px;
+    max-width: 500px;
     margin-left: 30px;
     border-radius: 20px;
     margin-top: 10%;
@@ -245,4 +238,40 @@ h2.animate__fadeIn {
 .btn3:hover {
     transform: scale(1.07);
     box-shadow: 0 0 50px #FEBF52;
+}
+
+.explore{
+    display: flex;
+    flex-wrap: wrap;
+    
+
+    
+}
+
+.exploreimg{
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    padding: 10px 0 10px 50px;
+    box-shadow: 0px 0px 5px black;
+    margin: 20px;
+    background-color: #FDF0D9;
+
+}
+
+.exploreimg:hover{
+    background-color: #31090a;
+    color: white;
+}
+
+
+.exploreimg img, h3{
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.exploreimg h3{
+    color: #50131B;
+
 }
